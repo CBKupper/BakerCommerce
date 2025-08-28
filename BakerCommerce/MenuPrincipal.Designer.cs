@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblDescrição = new System.Windows.Forms.Label();
+            this.lblDescricao = new System.Windows.Forms.Label();
             this.btnComandas = new System.Windows.Forms.Button();
             this.btnProdutos = new System.Windows.Forms.Button();
             this.btnCaixa = new System.Windows.Forms.Button();
@@ -49,15 +49,15 @@
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Menu Principal :: Padarosa";
             // 
-            // lblDescrição
+            // lblDescricao
             // 
-            this.lblDescrição.AutoSize = true;
-            this.lblDescrição.Font = new System.Drawing.Font("Microsoft YaHei Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescrição.Location = new System.Drawing.Point(125, 71);
-            this.lblDescrição.Name = "lblDescrição";
-            this.lblDescrição.Size = new System.Drawing.Size(535, 28);
-            this.lblDescrição.TabIndex = 1;
-            this.lblDescrição.Text = "Olá Administrador da Silva! Escolha uma opção abaixo:";
+            this.lblDescricao.AutoSize = true;
+            this.lblDescricao.Font = new System.Drawing.Font("Microsoft YaHei Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricao.Location = new System.Drawing.Point(125, 71);
+            this.lblDescricao.Name = "lblDescricao";
+            this.lblDescricao.Size = new System.Drawing.Size(535, 28);
+            this.lblDescricao.TabIndex = 1;
+            this.lblDescricao.Text = "Olá Administrador da Silva! Escolha uma opção abaixo:";
             // 
             // btnComandas
             // 
@@ -120,7 +120,7 @@
             this.Controls.Add(this.btnCaixa);
             this.Controls.Add(this.btnProdutos);
             this.Controls.Add(this.btnComandas);
-            this.Controls.Add(this.lblDescrição);
+            this.Controls.Add(this.lblDescricao);
             this.Controls.Add(this.lblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -136,7 +136,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Label lblDescrição;
+        private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.Button btnComandas;
         private System.Windows.Forms.Button btnProdutos;
         private System.Windows.Forms.Button btnCaixa;
