@@ -13,7 +13,7 @@ namespace BakerCommerce
     public partial class MenuPrincipal : Form
     {
         // Variaveis globais
-        Model.Usuario usuario = new.Usuario();
+        Model.Usuario usuario = new Model.Usuario();
 
         public MenuPrincipal(Model.Usuario usuario)
         {
@@ -26,6 +26,13 @@ namespace BakerCommerce
         {
            
 
+
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            FormUsuarios formUsuarios = new FormUsuarios(usuario);
+            formUsuarios.ShowDialog(); // Mostrar o form
 
         }
     }
