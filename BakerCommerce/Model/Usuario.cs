@@ -75,7 +75,7 @@ namespace BakerCommerce.Model
             cmd.Parameters.AddWithValue("@email", Email);
             // obter senha:
             string hashsenha = EasyEncryption.SHA.ComputeSHA256Hash(Senha);
-            cmd.Parameters.AddWithValue("@senha", Senha);
+            cmd.Parameters.AddWithValue("@senha", hashsenha);
             // Obs.: Certifique-se de utilizar alguma método para obter o hash da senha antes de cadastrar!
             cmd.Prepare();
             // O trecho abaixo irá retornar true caso o cadastro dê certo:
@@ -101,5 +101,71 @@ namespace BakerCommerce.Model
             }
         }
 
+        public bool Apagar()
+        {
+            string comando = "DELET FROM usuarios WHERE id = @id";
+            Banco conexaoBD = new Banco();
+            MySqlConnection con = conexaoBD.ObterConexao();
+            MySqlCommand cmd = new MySqlCommand(comando, con);
+            cmd.Parameters.AddWithValue("@id", Id);
+            cmd.Prepare();
+           
+            try
+            {
+                if (cmd.ExecuteNonQuery() == 0)
+                {
+                    conexaoBD.Desconectar(con);
+                    return false;
+                }
+                else
+                {
+                    conexaoBD.Desconectar(con);
+                    return true;
+                }
+            }
+            catch
+            {
+                conexaoBD.Desconectar(con);
+                return false;
+            }
+
+
+        }
+
+        public bool Modificar()
+        {
+            string comando = "UPDATE usuarios SET nome_completo = @nome_completo, " + "email = @email, sena = @senha WHERE id = @id";
+            Banco conexaoBD = new Banco();
+            MySqlConnection con = conexaoBD.ObterConexao();
+            MySqlCommand cmd = new MySqlCommand(comando, con);
+            cmd.Parameters.AddWithValue("@nome_completo", NomeCompleto);
+            cmd.Parameters.AddWithValue("@email", Email);
+
+            string hashsenha = EasyEncryption.SHA.ComputeSHA256Hash(Senha);
+
+            cmd.Parameters.AddWithValue("@senha", hashsenha);
+            cmd.Parameters.AddWithValue("@id", Id);
+            cmd.Prepare();
+
+            try
+            {
+                if (cmd.ExecuteNonQuery() == 0)
+                {
+                    conexaoBD.Desconectar(con);
+                    return false;
+                }
+                else
+                {
+                    conexaoBD.Desconectar(con);
+                    return true;
+                }
+            }
+            catch
+            {
+                conexaoBD.Desconectar(con);
+                return false;
+            }
+
+        }
     }
 }
