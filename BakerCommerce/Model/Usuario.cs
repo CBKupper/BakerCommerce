@@ -66,6 +66,7 @@ namespace BakerCommerce.Model
         }
         public bool Cadastrar()
         {
+
             string comando = "INSERT INTO usuarios (nome_completo, email, senha) VALEUS " + "(@nome_completo, @email, @senha)";
             Banco conexaoBD = new Banco();
             MySqlConnection con = conexaoBD.ObterConexao();
@@ -134,7 +135,7 @@ namespace BakerCommerce.Model
 
         public bool Modificar()
         {
-            string comando = "UPDATE usuarios SET nome_completo = @nome_completo, " + "email = @email, sena = @senha WHERE id = @id";
+            string comando = "UPDATE usuarios SET nome_completo = @nome_completo, " + "email = @email, senha = @senha WHERE id = @id";
             Banco conexaoBD = new Banco();
             MySqlConnection con = conexaoBD.ObterConexao();
             MySqlCommand cmd = new MySqlCommand(comando, con);
