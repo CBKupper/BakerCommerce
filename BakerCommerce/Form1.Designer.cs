@@ -40,22 +40,22 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(163, 135);
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft YaHei Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Location = new System.Drawing.Point(157, 135);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(62, 25);
+            this.lblEmail.Size = new System.Drawing.Size(68, 28);
             this.lblEmail.TabIndex = 1;
             this.lblEmail.Text = "Email:";
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(156, 180);
+            this.lblSenha.Font = new System.Drawing.Font("Microsoft YaHei Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.Location = new System.Drawing.Point(150, 180);
             this.lblSenha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(69, 25);
+            this.lblSenha.Size = new System.Drawing.Size(74, 28);
             this.lblSenha.TabIndex = 2;
             this.lblSenha.Text = "Senha:";
             // 
@@ -71,24 +71,26 @@
             // 
             // txbEmail
             // 
+            this.txbEmail.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbEmail.Location = new System.Drawing.Point(232, 135);
             this.txbEmail.Name = "txbEmail";
-            this.txbEmail.Size = new System.Drawing.Size(300, 27);
+            this.txbEmail.Size = new System.Drawing.Size(300, 32);
             this.txbEmail.TabIndex = 5;
             // 
             // txbSenha
             // 
+            this.txbSenha.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSenha.Location = new System.Drawing.Point(232, 183);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.PasswordChar = '•';
-            this.txbSenha.Size = new System.Drawing.Size(300, 27);
+            this.txbSenha.Size = new System.Drawing.Size(300, 32);
             this.txbSenha.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(226, 40);
+            this.label1.Location = new System.Drawing.Point(213, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(301, 31);
             this.label1.TabIndex = 7;
@@ -98,6 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(742, 412);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txbSenha);

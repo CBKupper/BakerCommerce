@@ -43,7 +43,7 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft YaHei Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(239, 30);
+            this.lblTitulo.Location = new System.Drawing.Point(256, 19);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(261, 28);
             this.lblTitulo.TabIndex = 0;
@@ -62,7 +62,7 @@
             // btnComandas
             // 
             this.btnComandas.Font = new System.Drawing.Font("Microsoft YaHei Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComandas.Location = new System.Drawing.Point(186, 126);
+            this.btnComandas.Location = new System.Drawing.Point(182, 145);
             this.btnComandas.Name = "btnComandas";
             this.btnComandas.Size = new System.Drawing.Size(403, 44);
             this.btnComandas.TabIndex = 2;
@@ -73,7 +73,7 @@
             // btnProdutos
             // 
             this.btnProdutos.Font = new System.Drawing.Font("Microsoft YaHei Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProdutos.Location = new System.Drawing.Point(186, 207);
+            this.btnProdutos.Location = new System.Drawing.Point(182, 226);
             this.btnProdutos.Name = "btnProdutos";
             this.btnProdutos.Size = new System.Drawing.Size(403, 44);
             this.btnProdutos.TabIndex = 3;
@@ -84,7 +84,7 @@
             // btnCaixa
             // 
             this.btnCaixa.Font = new System.Drawing.Font("Microsoft YaHei Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCaixa.Location = new System.Drawing.Point(186, 284);
+            this.btnCaixa.Location = new System.Drawing.Point(182, 303);
             this.btnCaixa.Name = "btnCaixa";
             this.btnCaixa.Size = new System.Drawing.Size(403, 44);
             this.btnCaixa.TabIndex = 4;
@@ -95,7 +95,7 @@
             // btnUsuarios
             // 
             this.btnUsuarios.Font = new System.Drawing.Font("Microsoft YaHei Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.Location = new System.Drawing.Point(186, 361);
+            this.btnUsuarios.Location = new System.Drawing.Point(182, 380);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(403, 44);
             this.btnUsuarios.TabIndex = 5;
@@ -106,7 +106,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BakerCommerce.Properties.Resources.Lightbrown_Coffee1;
-            this.pictureBox1.Location = new System.Drawing.Point(158, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(165, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(75, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -117,6 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnUsuarios);

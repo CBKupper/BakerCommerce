@@ -25,10 +25,7 @@ namespace BakerCommerce.Model
         {
 
             string comando = "SELECT * FROM usuarios WHERE email = @email AND senha = @senha";
-            /*
-            Caso vá utilizar o WHERE, empregue o uso de caracteres coringas,
-            semelhante ao apresentado no metódo Cadastrar() acima.
-            */
+           
             Banco conexaoBD = new Banco();
             MySqlConnection con = conexaoBD.ObterConexao();
             MySqlCommand cmd = new MySqlCommand(comando, con);
@@ -67,7 +64,7 @@ namespace BakerCommerce.Model
         public bool Cadastrar()
         {
 
-            string comando = "INSERT INTO usuarios (nome_completo, email, senha) VALEUS " + "(@nome_completo, @email, @senha)";
+            string comando = "INSERT INTO usuarios (nome_completo, email, senha) VALUES " + "(@nome_completo, @email, @senha)";
             Banco conexaoBD = new Banco();
             MySqlConnection con = conexaoBD.ObterConexao();
             MySqlCommand cmd = new MySqlCommand(comando, con);
@@ -79,9 +76,7 @@ namespace BakerCommerce.Model
             cmd.Parameters.AddWithValue("@senha", hashsenha);
             // Obs.: Certifique-se de utilizar alguma método para obter o hash da senha antes de cadastrar!
             cmd.Prepare();
-            // O trecho abaixo irá retornar true caso o cadastro dê certo:
-            // Em caso de erro, experimente comentar o try/catch e executar novamente o código;
-            // Grande parte dos problemas estão associados à um comando SQL incorreto. Verifique a string comando.
+           
             try
             {
                 if (cmd.ExecuteNonQuery() == 0)
